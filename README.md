@@ -1,44 +1,130 @@
-# Data Analyst Agent API  
-An AI-powered API that can source, prepare, analyze, and visualize any data on demand.  
+# ⚡ Data Analyst Agent — Your AI-Powered Data Companion  
+> Smarter, faster, and more intuitive analysis of your datasets using **Generative AI + Python magic.**  
+> Repository: *https://github.com/24f3002191/TDS_P2*
 
 ---
 
-## Overview
-The **Data Analyst Agent API** lets you send a **natural language request** describing your analysis task, and it will:
-1. **Source** datasets (from your URLs or public datasets).  
-2. **Clean & prepare** the data.  
-3. **Analyze** it (statistics, comparisons, modeling).  
-4. **Visualize** it (charts, graphs).  
-5. **Return** results (summary text, plots, and data files).  
+## 📌 What Is This?
+Meet **Data Analyst Agent 2.0** — an AI-driven assistant that eliminates tedious data crunching.  
+Upload your dataset + queries, and instantly get:  
+✅ Visual reports  
+✅ AI-generated insights  
+✅ Automated workflows  
 
-Built with **FastAPI**, **Pandas**, **Matplotlib**, **DuckDB**, and **Gemini Flash**
+Perfect for:  
+- Analysts 🧾  
+- Researchers 🔬  
+- Startups & Businesses 📈  
+- Anyone who loves turning raw data into knowledge  
 
 ---
 
-## Features
-- Accepts **plain English** analysis requests.
-- Supports multiple **data sources** (CSV, JSON, Parquet, APIs).
-- Automatic data cleaning and processing.
-- Generates **visualizations** (PNG, SVG).
-- Returns a **natural language summary** and downloadable results.
-- Runs analysis in a **secure sandbox**.
-- **Dockerized** for deployment.
+## ✨ Key Highlights  
+
+| Feature                  | Why It’s Awesome 🚀 |
+|---------------------------|----------------------|
+| 🤖 AI-Powered Insights    | Uses Google’s Generative AI to “understand” your data |
+| 📊 Rich Visualizations    | Generates plots with **Seaborn & Matplotlib** |
+| 🌍 Web Scraper Mode       | Fetch live data directly from URLs |
+| 📂 Multi-Format Friendly  | Accepts CSV, Excel, JSON, Parquet, or TXT |
+| 🔄 Ask Many at Once       | Batch processing for multiple questions |
+| 🖥️ Simple-to-Use Interface | Beginner friendly, no steep learning curve |
+| ⚡ Super-Fast Execution   | Optimized for speed + real-time feedback |
+
 ---
 
-## Prerequisites
-Before you install and run the API, make sure you have:
+## 🚀 Getting Started  
 
-1. **Python 3.11 or later**  
-   [Download here](https://www.python.org/downloads/)
+### 1️⃣ Clone the Repo  - git clone https://github.com/your-username/data-analyst-agent.git
+cd data-analyst-agent
 
-2. **Google Gemini API key**  
-   - Sign up at [Google AI Studio](https://aistudio.google.com/app/apikey)  
-   - Copy your key and save it for `.env`
+### 2️⃣ Install Requirements  - pip install -r requirements.txt
 
-3. **Git** (to clone the repo)  
-   [Download here](https://git-scm.com/downloads)
+### 3️⃣ Configure API Keys  
+Create a `.env` file inside the root folder:  
+GEMINI_API_KEY=your_google_api_key
+LLM_TIMEOUT_SECONDS=240
 
-4. **pip** (Python package manager)  
-   Comes with Python, but you can upgrade:
-   ```bash
-   python -m pip install --upgrade pip
+
+### 4️⃣ Start the Application  - python -m uvicorn app:app --reload
+
+Now open [**http://localhost:8000/**](http://localhost:8000/) in your browser 🌐  
+
+## 🧑‍💻 How It Works  
+
+1. **Write Your Questions**  
+   Create a `.txt` file with queries like:  What’s the revenue growth month-over-month?, Find correlation between Age and Income, Show most profitable products...etc
+
+2. **Upload Dataset + Questions File**  
+- Dataset (optional) → CSV, Excel, JSON, Parquet, or TXT  
+- Questions file (required) → Plain text  
+
+3. **Voilà!**  
+- AI processes the queries  
+- Generates insights + summaries  
+- Builds neat visualizations  
+
+---
+
+## 🛠 Tech Behind the Scenes  
+
+### Backend  
+- FastAPI ⚡ → High-performance web server  
+- LangChain 🧠 → Orchestrates LLM interactions  
+- Google Generative AI ✨ → Core AI engine  
+- Pandas + NumPy 📊 → Data wrangling made smooth  
+- Seaborn + Matplotlib 🎨 → Clean, insightful charts  
+
+### Frontend  
+- HTML5 + CSS + JavaScript  
+- Bootstrap-inspired modern UI  
+
+---
+
+## 🔧 API Blueprint  
+
+| Method | Endpoint  | Purpose |
+|--------|-----------|----------|
+| `GET`  | `/`       | Access web app |
+| `POST` | `/api`    | Submit dataset + questions |
+| `GET`  | `/summary`| App diagnostics & summaries |
+
+---
+
+## 📂 File Support  
+
+| Format | Extensions |
+|--------|------------|
+| CSV    | `.csv`     |
+| Excel  | `.xlsx`, `.xls` |
+| JSON   | `.json`    |
+| Parquet| `.parquet` |
+| Text   | `.txt`     |
+
+---
+
+## 🎯 Where Can You Use This?  
+
+- 📈 Business Strategy – Sales, KPIs, forecasts  
+- 🔬 Research – Data exploration, hypothesis validation  
+- 🤖 Data Science – Quick EDA, anomaly detection  
+- 📊 Reporting – Automated dashboards  
+
+---
+
+## 🔒 Security First  
+- ✅ No cloud storage → All data stays local  
+- ✅ API keys kept safe via `.env`  
+- ✅ Configurable CORS policy for production use  
+
+---
+
+## 📜 License  
+
+Licensed under **MIT** – free for personal & commercial use. 
+
+
+
+
+
+  
